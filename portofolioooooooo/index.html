@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Czarenna Callista Cliona Harie &mdash; Junior Cinematographer & Illustrator</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polygon points='23 7 16 12 23 17 23 7'/><rect x='1' y='5' width='15' height='14' rx='2' ry='2'/></svg>" />
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            hero: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'ui-monospace', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Authentic Profile Photo Data -->
+  <script src="./js/profile_photo.js?v=2"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css?v=17" />
+</head>
+<body class="text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Top Reading Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Static Clean Minimalist Studio Background (Pure White with Subtle Sky Ambient Glow) -->
+  <div class="fixed inset-0 pointer-events-none z-0 bg-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.07)_0%,transparent_60%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(14,165,233,0.04)_0%,transparent_50%)]"></div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- FLOATING TOP PILL NAVBAR -->
+  <!-- ============================================================== -->
+  <header class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+    <nav class="pill-navbar px-3 py-2 flex items-center gap-1 sm:gap-2 pointer-events-auto shadow-sm overflow-x-auto max-w-[95vw]">
+      <a href="#home" class="nav-pill-item active" data-nav="home">
+        <i data-lucide="home" class="w-3.5 h-3.5"></i>
+        <span>HOME</span>
+      </a>
+      <a href="#about" class="nav-pill-item" data-nav="about">
+        <i data-lucide="user" class="w-3.5 h-3.5"></i>
+        <span>ABOUT &amp; SKILLS</span>
+      </a>
+      <a href="#karya" class="nav-pill-item" data-nav="karya">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        <span>ARTWORKS</span>
+      </a>
+      <a href="#projects" class="nav-pill-item" data-nav="projects">
+        <i data-lucide="folder-git-2" class="w-3.5 h-3.5"></i>
+        <span>PROJECTS</span>
+      </a>
+      <a href="#contact" class="nav-pill-item" data-nav="contact">
+        <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+        <span>CONTACT</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="relative z-10 pt-16">
+
+    <!-- ============================================================== -->
+    <!-- 1. HOME: HERO WITH FULL NAME & INTERACTIVE ANIMATION -->
+    <!-- ============================================================== -->
+    <section id="home" class="min-h-[92vh] flex flex-col justify-center items-center text-center px-4 sm:px-6 max-w-5xl mx-auto py-16 sm:py-24 select-none">
+      <div class="w-full flex flex-col items-center">
+        
+        <!-- DKV Identity Badge -->
+        <div class="mb-12 sm:mb-16 md:mb-20 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/95 border border-blue-200/90 shadow-sm text-xs sm:text-sm font-semibold text-blue-900 backdrop-blur-md hover:border-blue-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+          <span>SMK Metland School &bull; Visual Communication Design (DKV)</span>
+        </div>
+
+        <!-- Big Bold Title: CZARENNA CALLISTA CLIONA HARIE -->
+        <div class="flex flex-col items-center">
+          <h1 class="font-hero text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-slate-950 tracking-tight uppercase leading-none drop-shadow-xs">
+            CZARENNA CALLISTA
+          </h1>
+
+          <!-- Animated Cliona Harie with Wipe Reveal Effect -->
+          <div class="cliona-wrapper mt-4 sm:mt-6">
+            <div class="cliona-mask">
+              <span class="cliona-animated-text font-hero text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-none drop-shadow-xs">
+                CLIONA HARIE
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typewriter Animated Subtitle in Sleek Frame -->
+        <div class="mt-12 sm:mt-16 md:mt-20 min-h-[46px] inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-full bg-slate-50/90 border border-slate-200/80 shadow-xs hover:border-blue-300 transition-colors">
+          <span class="text-xs sm:text-sm font-medium text-slate-500 font-display">Creative Focus:&nbsp;</span>
+          <span id="typewriter-text" class="text-xs sm:text-sm font-bold text-blue-600 font-display">Cinematography &amp; Visual Storytelling.</span>
+          <span class="typewriter-cursor h-4 sm:h-5 bg-blue-600"></span>
+        </div>
+
+        <!-- Action Button: Explore Portfolio -->
+        <div class="mt-10 sm:mt-14 flex items-center justify-center">
+          <a 
+            href="#about" 
+            class="group px-9 py-4 text-xs sm:text-sm font-bold btn-ocean inline-flex items-center gap-3 rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-1 transition-all"
+          >
+            <span>EXPLORE PORTFOLIO</span>
+            <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform animate-bounce"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 2. ABOUT, SKILLS & EXPERIENCE -->
+    <!-- ============================================================== -->
+    <section id="about" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+          PROFILE &amp; BACKGROUND
+        </span>
+        <h2 class="font-hero text-3xl sm:text-5xl font-black text-slate-950 mt-3">
+          ABOUT &amp; <span class="text-blue-600">SKILLS</span>
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          A blend of audio-visual cinematography, digital character illustration, and creative multimedia production from SMK Metland School (DKV).
+        </p>
+      </div>
+
+      <!-- Part A1: Profile & About Me (Row 1) -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-8">
+        
+        <!-- Left: Profile Photo & Personal Info -->
+        <div class="md:col-span-5 water-glass-panel p-6 space-y-5">
+          <div class="rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-sm relative group">
+            <img 
+              id="cio-profile-img"
+              src="" 
+              alt="Czarenna Callista Cliona Harie" 
+              class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            />
+            <script>
+              if (window.CIO_PROFILE_IMAGE) {
+                document.getElementById('cio-profile-img').src = window.CIO_PROFILE_IMAGE;
+              }
+            </script>
+            <div class="absolute bottom-3 left-3 bg-blue-900/90 backdrop-blur-md px-3 py-1.5 rounded-full text-white font-mono text-[11px] border border-blue-400/40 flex items-center gap-1.5 shadow-sm">
+              <i data-lucide="clapperboard" class="w-3.5 h-3.5 text-blue-300"></i>
+              <span>SMK METLAND &bull; DKV</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-hero text-2xl font-black text-slate-950 tracking-tight">Czarenna Callista Cliona Harie</h3>
+            <p class="text-xs font-bold text-blue-600 mt-1 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              Junior Cinematographer &amp; Illustrator
+            </p>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+              Jakarta, December 23, 2009
+            </p>
+          </div>
+
+          <!-- Language Proficiency (Concise & Clean) -->
+          <div class="pt-4 border-t border-slate-100 space-y-2.5">
+            <div class="flex items-center justify-between">
+              <p class="text-xs font-bold text-slate-700 uppercase tracking-wider font-display">Language Proficiency</p>
+              <span class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">3 Languages</span>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <!-- Indonesian -->
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-blue-400 transition-colors flex items-center justify-between">
+                <div class="flex items-center gap-2 font-bold text-slate-900">
+                  <span class="text-sm">🇮🇩</span>
+                  <span>Indonesian</span>
+                </div>
+                <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200/70 font-mono">Native</span>
+              </div>
+
+              <!-- English -->
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-blue-400 transition-colors flex items-center justify-between">
+                <div class="flex items-center gap-2 font-bold text-slate-900">
+                  <span class="text-sm">🇬🇧</span>
+                  <span>English</span>
+                </div>
+                <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/70 font-mono">Proficient</span>
+              </div>
+
+              <!-- Japanese -->
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-blue-400 transition-colors flex items-center justify-between">
+                <div class="flex items-center gap-2 font-bold text-slate-900">
+                  <span class="text-sm">🇯🇵</span>
+                  <span>Japanese</span>
+                </div>
+                <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full border border-slate-200 font-mono">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: About Me Card -->
+        <div class="md:col-span-7 water-glass-panel p-6 sm:p-8 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider font-display flex items-center gap-1.5">
+              <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+              About Me
+            </span>
+            <span class="text-[10px] font-mono font-bold bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full border border-blue-200">
+              DKV METLAND 2026
+            </span>
+          </div>
+
+          <h3 class="font-hero text-xl sm:text-2xl font-black text-slate-950 leading-tight">
+            DKV Student at SMK Metland School focusing on <span class="text-blue-600">Cinematography</span>, <span class="text-indigo-600">Digital Illustration</span>, and audio-visual creation.
+          </h3>
+
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+            Born in Jakarta on December 23, 2009. Dedicated to exploring audio-visual cinematography, digital character illustration, and handmade textile craft (crochet). Experienced in exploring visual stories through the camera lens, set art decoration, and creative character design.
+          </p>
+
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+            Actively involved in short film productions and school creative projects, contributing across the art department, make-up styling, and cinematography, while actively participating in student film organization activities.
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <!-- Part A2: Skills & Capabilities (Row 2 - Full Width Bento Hub) -->
+      <div class="water-glass-panel p-6 sm:p-8 space-y-6 mb-14 w-full">
+        <!-- Tab Navigation Header -->
+        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h4 class="font-hero text-lg sm:text-xl font-bold text-slate-950">Skills &amp; Capabilities</h4>
+            <p class="text-xs text-slate-500">Select a category to view technical competencies, production software, and teamwork values:</p>
+          </div>
+        </div>
+
+        <!-- Tab Buttons Bar -->
+        <div class="flex items-center gap-1.5 p-1.5 bg-slate-100/80 rounded-2xl border border-slate-200/80 overflow-x-auto no-scrollbar" id="about-tab-nav">
+          <button class="about-tab-btn active" data-tab="hard-skills" type="button">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+            <span>Competencies (8)</span>
+          </button>
+          <button class="about-tab-btn" data-tab="software" type="button">
+            <i data-lucide="laptop" class="w-3.5 h-3.5"></i>
+            <span>Software &amp; Tools (7)</span>
+          </button>
+          <button class="about-tab-btn" data-tab="soft-skills" type="button">
+            <i data-lucide="users" class="w-3.5 h-3.5"></i>
+            <span>Soft Skills (7)</span>
+          </button>
+        </div>
+
+        <!-- Tab Panes Container -->
+        <div id="about-tab-content">
+          
+          <!-- Tab 1: Hard Skills (Full Width 4 Columns) -->
+          <div id="tab-pane-hard-skills" class="about-tab-pane block space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+              <span>8 Technical Competencies in DKV &amp; Cinematography:</span>
+              <span class="text-blue-600 font-semibold font-mono">100% Practical Fieldwork</span>
+            </div>
+            <div id="hard-skills-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+              <!-- Rendered by js/app.js -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Software & Tools (Clean 3-Column Grid) -->
+          <div id="tab-pane-software" class="about-tab-pane hidden space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+              <span>7 Production Software &amp; Proficiency Levels:</span>
+              <span class="text-blue-600 font-semibold font-mono">Official App Suites &bull; Advanced Workflow</span>
+            </div>
+            <div id="software-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+              <!-- Rendered by js/app.js -->
+            </div>
+          </div>
+
+          <!-- Tab 3: Soft Skills (Full Width 3 Columns) -->
+          <div id="tab-pane-soft-skills" class="about-tab-pane hidden space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+              <span>7 Work Ethics &amp; Team Collaboration Values:</span>
+              <span class="text-blue-600 font-semibold font-mono">Teamwork &bull; Discipline</span>
+            </div>
+            <div id="soft-skills-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              <!-- Rendered by js/app.js -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Part B: DOCUMENTED PRODUCTION & LEADERSHIP EXPERIENCE -->
+      <div class="pt-8 border-t border-slate-200/80">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+            DOCUMENTED PRODUCTION &amp; LEADERSHIP
+          </span>
+          <h3 class="font-hero text-2xl sm:text-4xl font-black text-slate-950 mt-2">
+            PRODUCTION &amp; <span class="text-blue-600">EXPERIENCE</span>
+          </h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">
+            Documented involvement in school short film productions, commercial photoshoots, and creative campus initiatives.
+          </p>
+
+          <!-- Filter Experience Categories -->
+          <div id="pengalaman-filters" class="flex flex-wrap justify-center gap-2 mt-5">
+            <!-- Filter buttons handled by app.js -->
+          </div>
+        </div>
+
+        <!-- Experience List Container -->
+        <div id="pengalaman-list" class="space-y-5">
+          <!-- Rendered by js/app.js -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 3. ARTWORKS (VISUAL GALLERY: ILLUSTRATION, PHOTO, CRAFT) -->
+    <!-- ============================================================== -->
+    <section id="karya" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+          VISUAL GALLERY
+        </span>
+        <h2 class="font-hero text-3xl sm:text-5xl font-black text-slate-950 mt-3">
+          FEATURED <span class="text-blue-600">ARTWORKS</span>
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          A curated collection of visual illustrations, street and portrait photography, and handmade crafts.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div id="karya-filters" class="flex flex-wrap justify-center gap-2 mt-6">
+          <!-- Rendered by js/app.js -->
+        </div>
+      </div>
+
+      <!-- Grid Artworks -->
+      <div id="karya-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 4. PROJECTS (FEATURED PRODUCTIONS & SHOWCASE) -->
+    <!-- ============================================================== -->
+    <section id="projects" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto border-t border-slate-200/80">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+          FEATURED PRODUCTIONS
+        </span>
+        <h2 class="font-hero text-3xl sm:text-5xl font-black text-slate-950 mt-3">
+          FEATURED <span class="text-blue-600">PROJECTS</span>
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Culinary course photoshoot 'Project Negara' and Metland School mascot sticker character design.
+        </p>
+
+        <!-- Filter Buttons for Projects -->
+        <div id="projects-filters" class="flex flex-wrap justify-center gap-2 mt-6">
+          <!-- Rendered by js/app.js -->
+        </div>
+      </div>
+
+      <!-- Grid Projects Showcase -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-7">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 5. CONTACT -->
+    <!-- ============================================================== -->
+    <section id="contact" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+          GET IN TOUCH
+        </span>
+        <h2 class="font-hero text-3xl sm:text-5xl font-black text-slate-950 mt-3">
+          CONTACT <span class="text-blue-600">ME</span>
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Open for creative collaborations, film projects, photoshoot sessions, digital illustrations, or direct inquiries.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Contact Cards -->
+        <div class="md:col-span-5 space-y-4">
+          <!-- WhatsApp Card -->
+          <div class="water-glass-panel p-5 flex items-center justify-between group hover:border-emerald-500 transition-all">
+            <a 
+              href="https://wa.me/6287776942035" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center gap-3.5 flex-1"
+            >
+              <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Direct WhatsApp</p>
+                <p class="text-sm font-bold text-emerald-700 font-mono">087776942035</p>
+                <p class="text-[11px] text-slate-500">Click to chat directly</p>
+              </div>
+            </a>
+            <button 
+              type="button"
+              class="btn-copy p-2 rounded-xl bg-slate-100 hover:bg-emerald-100 text-slate-600 hover:text-emerald-800 transition-colors"
+              data-copy="087776942035"
+              title="Copy WhatsApp number"
+            >
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Email Card -->
+          <div class="water-glass-panel p-5 flex items-center justify-between group hover:border-blue-500 transition-all">
+            <a 
+              href="mailto:chaiyouuu@gmail.com" 
+              class="flex items-center gap-3.5 flex-1"
+            >
+              <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-600/20 group-hover:scale-105 transition-transform">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Official Email</p>
+                <p class="text-sm font-bold text-blue-700 font-mono">chaiyouuu@gmail.com</p>
+                <p class="text-[11px] text-slate-500">Send collaboration inquiry</p>
+              </div>
+            </a>
+            <button 
+              type="button"
+              class="btn-copy p-2 rounded-xl bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-800 transition-colors"
+              data-copy="chaiyouuu@gmail.com"
+              title="Copy email address"
+            >
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Info Box -->
+          <div class="water-glass-panel p-5 space-y-2 text-xs text-slate-600">
+            <p class="font-mono text-[11px] font-bold text-blue-600 uppercase tracking-wider">Education</p>
+            <p class="font-bold text-slate-900 text-sm">SMK Metland School &bull; DKV</p>
+            <p class="text-slate-600 font-medium">Visual Communication Design</p>
+            <p class="text-slate-500">Jakarta, Indonesia</p>
+          </div>
+        </div>
+
+        <!-- Right Contact Form -->
+        <div class="md:col-span-7 water-glass-panel p-6 sm:p-8">
+          <div id="form-success-note" class="hidden mb-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+            <div>
+              <p class="font-bold">Message Sent Successfully!</p>
+              <p>Thank you for reaching out. Czarenna will get back to you shortly.</p>
+            </div>
+          </div>
+
+          <form id="contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="c-name" class="block text-xs font-bold text-slate-700 mb-1">Full Name</label>
+                <input 
+                  type="text" 
+                  id="c-name" 
+                  required 
+                  placeholder="Your Name"
+                  class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-blue-600 transition-colors shadow-sm"
+                />
+              </div>
+
+              <div>
+                <label for="c-email" class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                <input 
+                  type="email" 
+                  id="c-email" 
+                  required 
+                  placeholder="you@example.com"
+                  class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-blue-600 transition-colors shadow-sm"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="c-message" class="block text-xs font-bold text-slate-700 mb-1">Message / Project Inquiry</label>
+              <textarea 
+                id="c-message" 
+                rows="4" 
+                required 
+                placeholder="Write your message, project collaboration proposal, photoshoot details, or message for Czarenna..."
+                class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-blue-600 transition-colors shadow-sm resize-none"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="btn-ocean w-full py-3.5 text-xs font-bold tracking-wider uppercase flex items-center justify-center gap-2"
+            >
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>Send Message Now</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- FOOTER -->
+  <!-- ============================================================== -->
+  <footer class="border-t border-slate-200/80 py-8 px-4 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Czarenna Callista Cliona Harie &bull; Junior Cinematographer &amp; Illustrator &bull; SMK Metland School DKV.</p>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <!-- ============================================================== -->
+  <button id="back-to-top" title="Back to top">
+    <i data-lucide="arrow-up" class="w-4 h-4"></i>
+  </button>
+
+  <!-- ============================================================== -->
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <!-- ============================================================== -->
+  <div id="toast-msg" class="toast-notification">
+    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL FOR DETAIL KARYA & PROJECTS -->
+  <!-- ============================================================== -->
+  <div id="detail-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="modal-box bg-white max-w-2xl w-full rounded-2xl p-6 relative border border-slate-200 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button id="modal-close" class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/data.js?v=29"></script>
+  <script src="./js/app.js?v=29"></script>
+</body>
+</html>
